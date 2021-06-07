@@ -1,3 +1,12 @@
-public class ContactRepository {
-    
+package com.pliniosalazar.crudRest.repository;
+
+
+import com.pliniosalazar.crudRest.model.Contact;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ContactRepository extends JpaRepository<Contact, Long> {
+
 }
+
